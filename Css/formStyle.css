@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*LOGO*/
+.logo{
+    
+    background:no-repeat center;
+
+}
+
+/* h1 Editing*/
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+
+/* .class */
+.top-bar{
+   
+    background-image: url("../Logo/Officiallogo.png");
+    background-color: rgb(180, 71, 71);
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+
+/*NAVIGATION BAR*/
+
+.nav-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    
+    }
+    
+    .nav-menu li {
+    display: inline-block;
+    margin-right: 10px;
+    
+    }
+    
+    .nav-menu li:last-child{
+        margin-right: 0;
+    }
+    
+    .nav-menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    transition: background-color 0.3s;
+    
+    }
+
+/*links Decoration*/
+a {
+width: 50%;
+text-align: center;
+background-color: rgb(216, 63, 63);
+color: black;
+padding: 15px;
+text-decoration: none;
+border-radius: 15px;
+margin: 20px;
+
+
+}
+
+/*Some ideias for styling the links*/
+a:visited{
+    background-color: rgb(178, 61, 61);
+}
+a:hover{
+    padding: 15px;
+    background-color: rgb(244, 133, 121);
+    color: black;
+}
+a:active{
+    background-color:rgb(255, 183, 0);
+}
+
+/******************************************************* FORM ***********************************************************************/
+
+form{
+    background-color: rgb(180, 71, 71);
+    width: 80%;
+    margin: auto auto;
+    color: white;
+    padding: 30px;
+  
+  }
+  
+  label {
+    font-family: bold;
+  }
+  
+  body{
+  
+    background-color: #e9bcbc71;
+  
+  }
+  
+  h1{
+  
+  text-align: center;
+  
+  }
+
+  /*FOOTER*/
+footer {
+    height: 0.1px;
+    background-color: #e9bcbc71;
+    margin-bottom: 0;
+}
+
+.footer-text {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.footer-link a {
+    color: black;
+}
+  .footer {
+    height: 5px;
+  }

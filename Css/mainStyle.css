@@ -1,0 +1,333 @@
+/* Reset*/
+html,
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9bcbc71;
+}
+
+/************************************************* LOGO *********************************************************************/
+.top-bar {
+    background-image: url("../Logo/Officiallogo.png");
+    background-color: rgb(180, 71, 71);
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+/* headers*/
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/*LINE SPACING*/
+p {
+    line-height: 1.6;
+}
+
+/*************************************************NAVIGATION BAR*********************************************************************/
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    width: auto;
+    max-width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(244, 133, 121);
+    color: black;
+}
+
+/********************************************* links Decoration* *********************************************************************/
+a {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(216, 63, 63);
+    color: inherit;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+a:visited{
+    background-color: rgb(178, 61, 61);
+}
+a:hover{
+    padding: 15px;
+    background-color: rgb(244, 133, 121);
+    color: black;
+}
+a:active{
+    background-color:rgb(255, 183, 0);
+}
+
+
+/***************************************** Photo adjustments *************************************************/
+
+/*CLASS PHOTOS*/
+.photos {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    /*object-fit: fill;*/
+
+
+}
+
+/*Force Images to have same size*/
+img {
+
+    display: block;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.flex {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: flex;
+}
+
+/***************************************** FORM *************************************************/
+
+#form {
+    background-color: #e9bcbc00;
+    color: rgb(180, 71, 71);
+}
+
+/*Adjust text and images aligment */
+section {
+    width: 50%;
+}
+
+aside {
+    width: 50%;
+}
+
+
+/*FOOTER*/
+footer {
+    height: 0.1px;
+    background-color: #e9bcbc71;
+    margin-bottom: 0;
+}
+
+.footer-text {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.footer-link a {
+    color: black;
+}
+
+/***************************************** Media queries for responsiveness *************************************************/
+
+@media (max-width: 768px) {
+
+    /* Stack flex items vertically */
+    .flex {
+        flex-direction: column;
+    }
+
+    /* Center-align the main content */
+    main article,
+    aside {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* font sizes */
+    body {
+        font-size: 14px;
+    }
+
+    /* Stack menu items vertically */
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.nav-menu ul li a {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    /* some very small screens */
+    body {
+        font-size: 12px;
+    }
+
+    .photos img {
+        max-width: 100%;
+    }
+}
+
+
+/********************************* SMALL SCREENS  NAV-Menu *****************************/
+
+/* below 768px */
+@media (max-width: 768px) {
+
+    /* Stack menu items vertically */
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .nav-menu li a {
+        padding: 10px;
+        margin: 5px auto;
+    }
+    
+}
+
+/* Below 480px */
+
+@media (max-width: 480px) {
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+        border-radius: 5px;
+    }
+}
+/*ASIDE PHOTOS*/
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+        gap: 10px; 
+    }
+
+    .photos img {
+        width: 90%; 
+        height: auto; 
+        margin: 0 auto;
+    }
+}
+@media (max-width: 480px) {
+    aside {
+        padding: 10px;
+    }
+
+    .photos {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .photos img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+/************************************ Inside Links Paragraphs  ************************************************/
+
+.styled-link {
+    /*color:inherit;*/
+    color:  rgb(216, 63, 63);
+    text-decoration: none;
+    font-family: inherit;
+    font-style: italic;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.styled-link:hover {
+    background-color: transparent; 
+    color: rgb(216, 63, 63); 
+    text-decoration: none; 
+    padding: 0; 
+}
+
+
+
+
+

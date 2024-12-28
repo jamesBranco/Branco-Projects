@@ -1,0 +1,137 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9bcbc71;
+    font-family: 'Roboto', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Centered container */
+.container {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Inputs styling */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #6c63ff;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: salmon;
+    color: #fff;
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: gold;
+    border: solid;
+    border-color: #333;
+    color: black;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #5149c8;
+}
+
+/* Result container */
+#result {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top-bar styling */
+.top-bar {
+    background-image: url("../../Logo/Officiallogo.png");
+    background-color: rgb(180, 71, 71);
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+/* Positioning buttons below the top-bar */
+.nextbackhome {
+    margin-top: 10px; 
+    display: flex;
+    gap: 10px; 
+    padding: 10px; 
+}
+
+/* nextbackhome */
+.nextbackhome a {
+    display: inline-block;
+    background-color: rgb(216, 63, 63);
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 15px;
+    color: white;
+}
+
+.nextbackhome a:hover {
+    background-color: goldenrod;
+    color: black;
+    transform: scale(1.05);
+}
+
+.nextbackhome a:active {
+    background-color: rgb(144, 29, 29);
+}

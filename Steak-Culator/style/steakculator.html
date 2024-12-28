@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/steakculatorstyle.css">
+    <title>Steakculator</title>
+</head>
+
+<body>
+    <!-- LOGO -->
+    <div class="top-bar"></div>
+
+    <!-- BUTTONS -->
+    <nav class="nextbackhome">
+        <a href="../../index.html" class="back-home">Back Home</a>
+    </nav>
+    <br>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h1>Steakculator</h1>
+            <input id="adults" name="adults" type="number" placeholder="Number of Adults">
+            <input id="children" name="children" type="number" placeholder="Number of Children">
+            <input id="time" name="time" type="number" placeholder="Time (hours)">
+            <button onclick="calculate()">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

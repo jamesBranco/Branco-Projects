@@ -1,0 +1,219 @@
+/*Reset*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    background-color: #e9bcbc71;
+}
+
+/*LOGO*/
+
+.top-bar {
+    background-image: url("../Logo/Officiallogo.png");
+    background-color: rgb(180, 71, 71);
+    height: 98px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+    
+}
+
+
+/************************************************ GRID TOP IMAGES *********************************************************************/
+
+.image-container {
+    margin: auto;
+    padding: 0 40px;
+    margin-top: 100px;
+    max-width: 990px;
+
+    display: grid;
+    list-style: none;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-auto-rows: 200px; 
+    gap: 5px; 
+    padding: 16px;
+   
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s;
+}
+
+/* Hover effect image */
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* RESPONSIVENESS TO SMALL SCREENS */
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 100%; /
+    }
+}
+/*********************************************************************************************************************/
+
+.content {
+    margin: auto;
+    padding: 0 40px;
+    margin-top: 100px;
+    max-width: 990px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: salmon;
+}
+
+h1{
+    font-size: 48px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.shadeBox {
+    padding: 15px 70px; 
+    margin-top: 0;
+    border-radius: 25px;
+}
+
+.shadeBox:hover {
+    box-shadow: 8px 8px 15px 12px rgba(68, 67, 67, 0.25);
+}
+
+/*BUTTONS*/
+
+.buttons {
+    margin: auto;
+    padding: 0 40px;
+    margin-top: 100px;
+    max-width: 990px;
+
+}
+
+.steak-amount:hover {
+    background-color: goldenrod;
+    padding: 16px;
+    border-radius: 10px;
+    color: black
+
+}
+.steak-amount {
+    background-color: salmon;
+    padding: 16px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.back-home:hover{
+    background-color: goldenrod;
+    padding: 16px;
+    border-radius: 15px;
+    color: black;
+    float: left;
+
+}
+.back-home {
+    background-color: rgb(216, 63, 63);
+    padding: 16px;
+    border-radius: 15px;
+    color: white;
+    float: left;
+
+}
+
+
+.next-page:hover{
+    background-color: goldenrod;
+    padding: 16px;
+    border-radius: 15px;
+    color: black;
+    float: right;
+
+}
+.next-page {
+    background-color: rgb(216, 63, 63);
+    padding: 16px;
+    border-radius: 15px;
+    color: white;
+    float: right;
+
+}
+
+/**/
+a {
+    text-decoration: none;
+
+}
+
+li{
+    margin-bottom: 14px;
+}
+
+.lista-ingredientes {
+    margin-bottom: 50px;
+}
+
+p, li {
+    line-height: 28px;
+}
+
+.footer {
+    margin-top: 15px;
+    background-color: rgb(180, 71, 71);
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer-text {
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.text-white-link {
+color: white;
+}
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    
+    color: rgb(144, 29, 29);
+}
+
+/************************************ Inside Links Paragraphs  ************************************************/
+
+.styled-link {
+    /*color:inherit;*/
+    color:  rgb(216, 63, 63);
+    text-decoration: none;
+    font-family: inherit;
+    font-style: italic;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.styled-link:hover {
+    color:  rgb(216, 63, 63);
+    text-decoration: none;
+}
